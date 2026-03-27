@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <title>Home</title>
+  <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+<body class="m-0 p-0">
+<main class="bg-[#0E0D0B] relative">
+  <hero class="w-full md:w-screen h-screen">
+    
+    <div class="aspect-auto py-100 object-cover bg-no-repeat" style="background-image: url('assets/hero-jazz.jpg');" >
+    <div class="absolute top-0 right-0 w-full ">
+    <nav class="flex flex-row gap-4 w-full justify-between fixed px-12 py-12">
+      <div class="flex gap-2">
+      <p class="text-white text-lg">Bon Bon</p> <p class="text-[#AF7D17] text-lg italic">Jazz</p>
+      </div>
+      <div class="flex flex-row gap-4">
+      <p class="uppercase"><a class="text-white hover:underline" href="#eventos">Eventos</a></p>
+      <p class="uppercase"><a class="text-white hover:underline" href="#Reservas">Reservar</a></p>
+      <p class="uppercase"><a class="text-white hover:underline" href="#">Instagram</a></p>
+      </div>
+    </nav>
+    </div>
+      <div class="flex flex-col text-center items-center gap-6">
+      <p class="uppercase text-[#f0ac24]">Jazz ~ Cocteles ~ Cultura</p>
+      <p class="text-white text-7xl font-bold">Bon Bon</p>
+      <p class="text-[#AF7D17] text-7xl italic font-bold">Jazz Bar</p>
+      <p class="text-white">Málaga</p>
+      <button class="bg-amber-200/60  border border-[#AF7D17] py-2 px-10 hover:border-amber-400"><a class="text-white" href="#Reservas">Reservar mesa</a></button>
+      </div>
+    </div>
+  </hero>
+  
+  <div class="w-full md:w-screen h-full" id="Reservas">
+    <div class="flex flex-col items-center py-6 gap-6">
+      <p class="text-4xl text-white">Solicita una mesa</p>
+      <p class="text-gray-300">Selecciona los datos de tu reserva e intentaremos conseguir los mejores asientos para ti</p>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex flex-col gap-2">
+          <label class="text-[#AF7D17] uppercase font-sans">Personas</label>
+          <select name="numpersonas" id="numpersonas" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2">
+            <option value="1 persona">1 persona</option>
+            <option value="2 persona">2 persona</option>
+            <option value="3 persona">3 persona</option>
+            <option value="4 persona">4 persona</option>
+            <option value="5 persona">5 persona</option>
+            <option value="6 persona">6 persona</option>
+            <option value="7+ persona">7 o más personas</option>
+          </select>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+          <label class="text-[#AF7D17] uppercase font-sans">Fecha</label>
+          <input type="date" name="fecha" id="fecha" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2 focus:outline-none ring-0">
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label class="text-[#AF7D17] uppercase font-sans">Horario</label>
+          <select name="horario" id="horario" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2">
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="21:30">21:30</option>
+          </select>
+        </div>
+      </div>
+        <input type="submit" value="Enviar" class="mt-2 border w-[20%] py-2 px-10 d bg-linear-to-r from-[#AF7D17] to-[#DBB260] cursor-pointer hover:border-amber-50">
+    </div>
+    
+    <div class="flex flex-col md:flex-row px-40 py-20">
+      <div class="w-[50%] h-full flex items-center justify-center">
+        <img
+          src="assets/cocktails.jpg"
+          alt="Cocktail en Bon Bon Jazz"
+          class="w-[50%] h-[50%] object-cover bg-no-repeat shadow-md shadow-[#AF7D17]"
+          >
+      </div>
+      <div class="flex flex-col justify-center md:max-w-prose gap-6">
+      <p class="font-bold text-white text-5xl">Bienvenido a</p>
+      
+      <p class="font-bold text-[#AF7D17] text-5xl italic">Bon Bon Jazz Bar</p>
+      
+      <p class="text-gray-300">Un lugar donde la elegancia se fusiona con la pasión por la música, el arte y los cócteles. 
+        Disfruta de un ambiente acogedor que te transportará a la época dorada del jazz y la buena vida.
+        Con una biblioteca de más de 700 libros, sofás cómodos y proyecciones de películas, 
+        cada visita es una experiencia única que te invita a relajarte y disfrutar al máximo.</p>
+      </div>
+
+  </div>
+
+<section id="eventos">
+  <div class="flex flex-col px-40 py-20 bg-[#221F1C]">
+    <div class="flex flex-col text-center items-center ">
+      <p class="text-amber-200 text-lg">Eventos</p>
+      <p class="text-white text-5xl">What's Going On</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row px-8 gap-4 py-10">
+      <div class="w-1/2 order-1 bg-no-repeat border border-amber-50" style="background-image: url(assets/open-mic.jpg); height: 65vh">
+        
+        <div class="px-10 py-10">
+        <p class="uppercase text-amber-500">Cada Domingo · 20:00</p>
+        <p class="font-bold text-white">Domingos de Micro Abierto</p>
+        <p class="text-gray-400">¡Bienvenidos a nuestro micro abierto! Ven a compartir tu arte, ya sea música, poesía o stand-up, y sé parte de esta comunidad vibrante.</p>
+        </div>
+
+      </div>
+      <div class="w-1/2 order-2 bg-no-repeat border border-amber-50" style="background-image: url(assets/piano.jpg); height: 65vh;" >
+        <div class="px-10 py-10">
+        <p class="uppercase text-amber-500">Lun–Sáb · 21:00</p>
+        <p class="font-bold text-white">Piano Jazz Club</p>
+        <p class="text-gray-400">Disfruta de una noche especial. Crea momentos memorables en un ambiente acogedor y déjate llevar por la magia de nuestras veladas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="h-screen flex flex-col px-40 py-20">
+    <div class="flex flex-col text-center items-center ">
+      <p class="text-amber-200 text-lg">La experiencia</p>
+      <p class="text-white text-5xl">Nuestra Carta</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row px-8 gap-4 py-10">
+      <div class="w-1/2 order-1 border border-amber-50 hover:border hover:border-amber-200">
+        <div class="px-10 py-10">
+        <div class="flex flex-row gap-2">
+          <span class="material-symbols-outlined text-amber-200">
+            local_bar
+          </span>
+        <p class="font-bold text-white">Cócteles Clásicos</p>
+        </div>
+        <p class="text-gray-400">Cuidadosamente elaborados por nuestros expertos mixólogos para una experiencia de sabores única.</p>
+        </div>
+
+      </div>
+      <div class="w-1/2 order-2 border border-amber-50 hover:border hover:border-amber-200" >
+        <div class="px-10 py-10">
+        <div class="flex flex-row gap-2">
+          <span class="material-symbols-outlined text-amber-200">
+              wine_bar
+          </span>
+        <p class="font-bold text-white">Vinos Nacionales</p>
+        </div>
+        <p class="text-gray-400">Una cuidadosa selección de vinos nacionales que realzan tus momentos en el bar.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col md:flex-row px-8 gap-4 py-5">
+    <div class="w-1/2 order-2 border border-amber-50 hover:border hover:border-amber-200" >
+        <div class="px-10 py-10">
+        <div class="flex flex-row gap-2">
+          <span class="material-symbols-outlined text-amber-200">
+            restaurant
+          </span>
+        <p class="font-bold text-white">Quiche Casero</p>
+        </div>
+        <p class="text-gray-400">Nuestra especialidad que combina tradición y sabor. Aperitivos de bar para acompañar la velada.</p>
+        </div>
+      </div>
+      <div class="w-1/2 order-2 border border-amber-50 hover:border hover:border-amber-200" >
+        <div class="px-10 py-10">
+        <div class="flex flex-row gap-2">
+          <span class="material-symbols-outlined text-amber-200">
+            music_note
+          </span>
+        <p class="font-bold text-white">Ambiente Cultural</p>
+        </div>
+        <p class="text-gray-400">Música en vivo, literatura y buena compañía crean una atmósfera inigualable.</p>
+        </div>
+      </div>
+      </div>
+    
+  </div>
+
+<footer class="flex flex-col px-40 py-10 bg-[#221F1C]">
+  <div class="flex flex-col items-center text-center"> 
+    <p class="text-white font-bold text-2xl">Síguenos</p>
+    <div class="flex flex-row gap-4 mb-10">
+      <p class="text-[#6e695f]"><a>instagram</a></p>
+      <p class="text-[#6e695f]"><a>instagram</a></p>
+    </div>
+    <p class="text-[#AF7D17] italic font-bold">Bon Bon Jazz Bar</p>
+    <p class="text-[#6e695f] text-sm mb-10">Málaga, España</p>
+
+    <p class="text-[#6e695f] text-sm">© 2026 Bon Bon Jazz Bar Málaga. Todos los derechos reservados.</p>
+    
+  </div>
+</footer>
+
+</main>
+</body>
