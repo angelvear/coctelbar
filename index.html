@@ -4,7 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <title>Home</title>
+  <title>Bon Bon Jazz Bar Málaga | Cócteles, Música en Vivo y Cultura</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Bon Bon Jazz Bar",
+    "description": "Disfruta del mejor Jazz en Málaga en Bon Bon Jazz Bar. Cócteles clásicos, piano en vivo, biblioteca de 700 libros y un ambiente único inspirado en la época dorada.",
+    "url": "https://www.bonbonjazzbarmalaga.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Reding 10",
+      "addressLocality": "Málaga",
+      "addressRegion": "Andalucía",
+      "postalCode": "29016",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34951234567",
+    "email": "info@bonbonjazzbarmalaga.com"
+  }
+  </script>
+  <meta name="description" content="Disfruta del mejor Jazz en Málaga en Bon Bon Jazz Bar. Cócteles clásicos, piano en vivo, biblioteca de 700 libros y un ambiente único inspirado en la época dorada.">
   <link href="./dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +37,11 @@
 <main class="bg-[#0E0D0B] relative">
   <hero class="w-full md:w-screen h-screen">
     
-    <div class="aspect-auto py-100 object-cover bg-no-repeat" style="background-image: url('assets/hero-jazz.jpg'); background-position: center;"" >
+    <div class="aspect-auto py-100 object-cover bg-no-repeat" style="background-image: url('assets/hero-jazz.jpg'); background-position: center; alt: 'Hero image - Imagen encabezado principal de la web';">
     <div class="absolute top-0 right-0 w-full ">
     <nav class="flex flex-row gap-4 w-full justify-between fixed px-14 md:px-12 py-8 bg-white/10 backdrop-blur-sm ">
       <div class="flex gap-2">
-      <p class="text-white text-lg hidden md:block">Bon Bon</p> <p class="text-[#AF7D17] text-lg italic hidden md:block">Jazz</p>
+      <h1 class="text-white text-lg hidden md:block">Bon Bon</h1> <h1 class="text-[#AF7D17] text-lg italic hidden md:block">Jazz</h1>
       </div>
       <div class="flex flex-row gap-4 text-center">
       <p class="uppercase"><a class="text-white hover:underline" href="#eventos">Eventos</a></p>
@@ -47,13 +67,13 @@
 <section id="Reservas">
   <div class="w-full md:w-screen h-full space-y-4">
     <div class="flex flex-col items-center text-center md:text-left py-6 gap-6">
-      <p class="text-4xl text-white">Solicita una mesa</p>
-      <p class="text-gray-300">Selecciona los datos de tu reserva e intentaremos conseguir los mejores asientos para ti</p>
+      <h2 class="text-4xl text-white">Solicita una mesa</h2>
+      <h3 class="text-gray-300">Selecciona los datos de tu reserva e intentaremos conseguir los mejores asientos para ti</h3>
       <form action="https://formspree.io/f/xreobzpj" method="post">
       <div class="flex flex-col md:flex-row items-center gap-8">
         <div class="flex flex-col gap-2">
           <label class="text-[#AF7D17] uppercase font-sans">Personas</label>
-          <select required name="numpersonas" id="numpersonas" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2">
+          <select required name="num_personas" id="numpersonas" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2">
             <option value="1 persona">1 persona</option>
             <option value="2 persona">2 persona</option>
             <option value="3 persona">3 persona</option>
@@ -66,12 +86,12 @@
         
         <div class="flex flex-col gap-2">
           <label class="text-[#AF7D17] uppercase font-sans">Fecha</label>
-          <input required type="date" name="fecha" id="fecha" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2 focus:outline-none ring-0">
+          <input required type="date" name="fecha_reserva" id="fecha" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2 focus:outline-none ring-0">
         </div>
 
         <div class="flex flex-col gap-2">
           <label class="text-[#AF7D17] uppercase font-sans">Horario</label>
-          <select required name="horario" id="horario" class="text-center bg-[#221F1C] text-white border border-[#AF7D17] w-35 px-2 py-2">
+          <select required name="horario" id="hora_reserva" class="text-center bg-[#221F1C] text-white border border-[#AF7D17] w-35 px-2 py-2">
             <option value="18:30">18:30</option>
             <option value="19:00">19:00</option>
             <option value="19:30">19:30</option>
@@ -110,12 +130,12 @@
 <section id="eventos" class="py-5 md:py-20">
   <div class="w-full flex flex-col px-10 md:px-40 bg-[#221F1C] space-y-2">
     <div class="flex flex-col text-center items-center space-y-2">
-      <p class="text-amber-200 text-lg py-6">Eventos</p>
-      <p class="text-white text-5xl">What's Going On</p>
+      <h2 class="text-amber-200 text-lg py-6">Eventos</h2>
+      <h3 class="text-white text-5xl">What's Going On</h3>
     </div>
 
     <div class="w-full flex flex-col md:flex-row px-0 md:px-4 gap-4">
-      <div class="w-full md:w-1/2 h-screen order-1 bg-no-repeat" style="background-image: url(assets/open-mic.jpg); background-position: center;">
+      <div class="w-full md:w-1/2 h-screen order-1 bg-no-repeat" style="background-image: url(assets/open-mic.jpg); background-position: center; alt: 'Evento de micro abierto los domingos';">
         
         <div class="px-10 py-40 justify-center flex flex-col md:max-w-prose">
         <p class="uppercase text-amber-500">Cada Domingo · 20:00</p>
@@ -124,7 +144,7 @@
         </div>
 
       </div>
-      <div class="w-full md:w-1/2 order-2 h-screen bg-no-repeat" style="background-image: url(assets/piano.jpg); background-position: center;" >
+      <div class="w-full md:w-1/2 order-2 h-screen bg-no-repeat" style="background-image: url(assets/piano.jpg); background-position: center; alt: 'Concierto en directo con Piano Jazz Club';" >
         <div class="px-10 py-40 flex flex-col justify-center md:max-w-prose">
         <p class="uppercase text-amber-500">Lun–Sáb · 21:00</p>
         <p class="font-bold text-white">Piano Jazz Club</p>
@@ -138,8 +158,8 @@
 <section class="px-10 md:px-40 py-10" id="experiencia">
   <div class="w-full h-fit flex flex-col">
     <div class="flex flex-col text-center items-center ">
-      <p class="text-amber-200 text-lg">La experiencia</p>
-      <p class="text-white text-5xl">Nuestra Carta</p>
+      <h2 class="text-amber-200 text-lg">La experiencia</h2>
+      <h3 class="text-white text-5xl">Nuestra Carta</h3>
     </div>
 
     <div class="w-full flex flex-col md:flex-row px-8 gap-10 py-10">
@@ -202,8 +222,7 @@
   <div class="flex flex-col items-center text-center"> 
     <p class="text-white font-bold text-2xl">Síguenos</p>
     <div class="flex flex-row gap-4 mb-10">
-      <p class="text-[#6e695f]"><a>instagram</a></p>
-      <p class="text-[#6e695f]"><a>instagram</a></p>
+      <p class="text-[#6e695f]"><a href="https://www.instagram.com/bonbonjazzbarmalaga?igsh=ZnczZHBldXFtMHU5&utm_source=qr" target="_blank" rel="noopener">instagram</a></p>
     </div>
     <p class="text-[#AF7D17] italic font-bold">Bon Bon Jazz Bar</p>
     <p class="text-[#6e695f] text-sm mb-10">Málaga, España</p>
