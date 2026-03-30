@@ -41,7 +41,7 @@
   </hero>
   
 <section id="Reservas">
-  <div class="w-full md:w-screen h-full">
+  <div class="w-full md:w-screen h-full space-y-4">
     <div class="flex flex-col items-center text-center md:text-left py-6 gap-6">
       <p class="text-4xl text-white">Solicita una mesa</p>
       <p class="text-gray-300">Selecciona los datos de tu reserva e intentaremos conseguir los mejores asientos para ti</p>
@@ -77,19 +77,19 @@
           </select>
         </div>      
     </div>
-      <button type="submit" class="mt-2 border w-40 md:w-[20%] py-2 px-10 d bg-linear-to-r from-[#AF7D17] to-[#DBB260] cursor-pointer hover:border-amber-50">Enviar</button>
+      <button type="submit" class="mt-2 border w-40 md:w-[30%] py-2 px-10 d bg-linear-to-r from-[#AF7D17] to-[#DBB260] cursor-pointer hover:border-amber-50">Enviar</button>
       </form>
     </div>
     
     <div class="flex flex-col md:flex-row px-10 md:px-40 py-5 md:py-20">
-      <div class="w-full md:w-[50%] h-full flex items-center justify-center mb-10 md:mb-0">
+      <div class="md:w-[50%] h-full flex items-center justify-center mb-10 md:mb-0">
         <img
           src="assets/cocktails.jpg"
           alt="Cocktail en Bon Bon Jazz"
-          class="w-[70%] h-[70%] object-cover bg-no-repeat shadow-md shadow-[#AF7D17]"
+          class="w-[70%] h-[70%] lg:w-[50%] lg:h-[50%] object-cover bg-no-repeat shadow-md shadow-[#AF7D17]"
           >
       </div>
-      <div class="flex flex-col justify-center md:max-w-prose gap-6 text-center md:text-left">
+      <div class="flex flex-col justify-center md:max-w-prose gap-6 text-center md:text-right">
       <p class="font-bold text-white text-5xl">Bienvenido a</p>
       
       <p class="font-bold text-[#AF7D17] text-5xl italic">Bon Bon Jazz Bar</p>
@@ -104,16 +104,16 @@
 </section>
 
 <section id="eventos">
-  <div class="w-full flex flex-col px-10 md:px-40 py-5 md:py-20 bg-[#221F1C]">
-    <div class="flex flex-col text-center items-center ">
-      <p class="text-amber-200 text-lg">Eventos</p>
+  <div class="w-full h-screen flex flex-col px-10 md:px-40 py-5 md:py-20 bg-[#221F1C] space-y-10">
+    <div class="flex flex-col text-center items-center space-y-4">
+      <p class="text-amber-200 text-lg py-6">Eventos</p>
       <p class="text-white text-5xl">What's Going On</p>
     </div>
 
-    <div class="w-full flex flex-col md:flex-row px-0 md:px-4 gap-4 py-5 md:py-10">
+    <div class="w-full flex flex-col md:flex-row px-0 md:px-4 gap-4 py-4">
       <div class="w-full md:w-1/2 h-screen order-1 bg-no-repeat" style="background-image: url(assets/open-mic.jpg);">
         
-        <div class="px-10 py-10">
+        <div class="px-10 py-10 flex flex-col justify-center md:max-w-prose">
         <p class="uppercase text-amber-500">Cada Domingo · 20:00</p>
         <p class="font-bold text-white">Domingos de Micro Abierto</p>
         <p class="text-gray-400">¡Bienvenidos a nuestro micro abierto! Ven a compartir tu arte, ya sea música, poesía o stand-up, y sé parte de esta comunidad vibrante.</p>
@@ -121,7 +121,7 @@
 
       </div>
       <div class="w-full md:w-1/2 order-2 h-screen bg-no-repeat" style="background-image: url(assets/piano.jpg);" >
-        <div class="px-10 py-10">
+        <div class="px-10 py-10 flex flex-col justify-center md:max-w-prose">
         <p class="uppercase text-amber-500">Lun–Sáb · 21:00</p>
         <p class="font-bold text-white">Piano Jazz Club</p>
         <p class="text-gray-400">Disfruta de una noche especial. Crea momentos memorables en un ambiente acogedor y déjate llevar por la magia de nuestras veladas.</p>
@@ -131,8 +131,8 @@
   </div>
 </section>
 
-<section class="mb-80 md:mb-36" id="experiencia">
-  <div class="w-full h-screen flex flex-col px-10 md:px-40 py-10 md:py-20">
+<section class="mb-3" id="experiencia">
+  <div class="w-full h-fit flex flex-col px-10 md:px-40 py-10">
     <div class="flex flex-col text-center items-center ">
       <p class="text-amber-200 text-lg">La experiencia</p>
       <p class="text-white text-5xl">Nuestra Carta</p>
