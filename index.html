@@ -71,6 +71,7 @@
     <div class="flex flex-col items-center text-center md:text-left py-6 gap-6">
       <h2 class="text-4xl text-white">Solicita una mesa</h2>
       <h3 class="text-gray-300">Selecciona los datos de tu reserva e intentaremos conseguir los mejores asientos para ti</h3>
+      <h3 class="text-gray-300">Contactaremos contigo lo antes posible para confirmar tu reserva</h3>
       <form action="https://formspree.io/f/xreobzpj" method="post">
       <div class="flex flex-col md:flex-row items-center gap-8">
         <div class="flex flex-col gap-2">
@@ -101,8 +102,21 @@
             <option value="21:00">21:00</option>
             <option value="21:30">21:30</option>
           </select>
-        </div>      
+        </div>  
     </div>
+
+    <div class="flex flex-row items-center justify-center gap-4 mt-4">
+      <div class="flex flex-col gap-2">
+          <label class="text-[#AF7D17] uppercase font-sans">Email</label>
+          <input required type="email" name="email" id="email" placeholder="Email" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2 focus:outline-none ring-0">
+      </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-[#AF7D17] uppercase font-sans">Telefono</label>
+          <input required type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="bg-[#221F1C] text-white border border-[#AF7D17] px-2 py-2 focus:outline-none ring-0">
+        </div>
+    </div>
+
+
       <button type="submit" class="mt-6 border w-40 md:w-[30%] py-2 px-10 d bg-linear-to-r from-[#AF7D17] to-[#DBB260] cursor-pointer hover:border-amber-50">Enviar</button>
       </form>
     </div>
